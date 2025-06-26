@@ -11,12 +11,15 @@ function subtract(a, b) {
 function multiply(a, b) {
   return a * b;
 }
-<<<<<<< feature/multiply-button
+
+
+function calculateAndDisplay(fn) {
+
 
 function calculateAndDisplay(fn) {
   const a = Number(document.getElementById('a').value);
   const b = Number(document.getElementById('b').value);
-=======
+
 
 function calculateAndDisplay(fn) {
 
@@ -47,7 +50,6 @@ function calculateAndDisplay(fn) {
     .addEventListener("click", () => calculateAndDisplay(window[op]));
 });
 
->>>>>>> main
   document.getElementById('result').textContent = fn(a, b);
 }
 
@@ -59,7 +61,3 @@ document.getElementById('btn-subtract')
 
 document.getElementById('btn-multiply')
   .addEventListener('click', () => calculateAndDisplay(multiply));
-<<<<<<< feature/multiply-button
-=======
-
->>>>>>> main
